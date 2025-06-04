@@ -2,13 +2,11 @@
 
 @section('content')
 
-<!-- Alumni Dashboard -->
 <div class="container mx-auto px-6 py-8">
-<h1 class="text-4xl font-extrabold text-gray-800 mb-10 tracking-wide transition-all duration-300 hover:text-rose-800 hover:underline underline-offset-8">
-    Welcome to the Alumni Dashboard
-</h1>
+    <h1 class="text-4xl font-extrabold text-gray-800 mb-10 tracking-wide transition-all duration-300 hover:text-rose-800 hover:underline underline-offset-8">
+        Welcome to the Alumni Dashboard
+    </h1>
 
-    <!-- Upcoming Events Section -->
     <div class="mb-12">
         <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 hover:text-rose-800 transition duration-300 ease-in-out">
             Upcoming Events
@@ -51,12 +49,9 @@
                     </div>
                 @endforeach
             </div>
-
-            
         @endif
     </div>
 
-    <!-- Alumni Blog Posts Section -->
     <div class="mb-12">
         <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 hover:text-rose-800 transition duration-300 ease-in-out">
             Alumni Blog Posts
@@ -82,11 +77,8 @@
                 </div>
             @endforeach
         </div>
-
-       
     </div>
 
-    <!-- Announcements Section -->
     <div class="mb-12">
         <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 hover:text-rose-800 transition duration-300 ease-in-out">
             Announcements
@@ -104,7 +96,7 @@
                     </p>
 
                     <p class="text-sm text-gray-500">
-                        Status: 
+                        Status:
                         <span class="{{ $announcement->is_active ? 'text-green-500' : 'text-red-500' }}">
                             {{ $announcement->is_active ? 'Active' : 'Inactive' }}
                         </span>
@@ -112,8 +104,6 @@
                 </div>
             @endforeach
         </div>
-
-       
     </div>
 </div>
 
